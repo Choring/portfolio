@@ -329,6 +329,7 @@ nav p {
     display: block;
     margin: 0 auto;
     opacity: 0.85;
+    transition: 0.4s;
 }
 
 .profileText {
@@ -375,6 +376,11 @@ nav p {
     .profileContainer>.profileText >p{
         font-size: 20px;
         transition: 0.5s;
+    }
+
+    .profileImg>img {
+        width: 180px;
+        transition: 0.4s;
     }
 }
 
@@ -555,8 +561,11 @@ nav p {
 
 @media screen and (max-width:768px) {
 
+    #skills {
+        padding-left: 15px;
+    }
+
     #skills h2 {
-        margin-left: 15px;
         font-size: 2rem;
         line-height: 2.2rem;
         transition: 0.5s;
@@ -572,9 +581,6 @@ nav p {
         width: 100%;
     }
 
-    .skillsContainer {
-        padding-left: 15px;
-    }
 }
 
 /***************************************************
@@ -660,9 +666,20 @@ nav p {
 
 @media screen  and (min-width:375px) and (max-width:768px) {
     #work {
-        height: fit-content;
+        padding-left: 15px;
     }
     
+    #work > h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .workBox {
+        margin-top: 30px;
+    }
+    .workBox:nth-child(1){
+        margin-top:0;
+    }
 }
 /***************************************************
 
@@ -700,10 +717,6 @@ nav p {
     font-size: 4.5em;
     color:#08FDD8;
     line-height: 3.4rem;
-}
-
-.contactContainer {
-    
 }
 
 .motto::before {
@@ -799,6 +812,74 @@ nav p {
 .phone:hover .text {
     bottom: 130px;
     left: 60px;
+}
+
+@media screen  and (min-width:375px) and (max-width:768px) {
+    #contact {
+        padding-left: 15px;
+    }
+    
+    #contact>h2 {
+        font-size: 2em;
+        line-height: 2.2rem;
+    }
+
+    .motto p:nth-child(1) {
+        font-size: 24px;
+    }
+    
+
+    .email {
+        margin-left: 0;
+    }
+    
+    .phone {
+        margin-left: 0;
+    }
+
+    .email, .phone {
+        width: 200px;
+        height: 200px;
+    }
+
+   .email img, .phone img {
+        width: 80px;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+    .email:hover img, .phone:hover img {
+        width: 50px;
+        top:0;
+        left: 80px;
+    }
+
+    .email .text {
+        position: absolute;
+        bottom: -30px;
+        left: 14px; 
+    }
+
+    .email:hover .text {
+        bottom: 80px;
+        left: 14px;
+    }
+
+    .email .text p, .phone .text p {
+        font-size: 14px;
+    }
+
+
+    .phone .text {
+        position: absolute;
+        bottom: -30px;
+        left: 50px; 
+    }
+    
+    .phone:hover .text {
+        bottom: 80px;
+        left: 50px;
+    }
 }
 /***************************************************
 
