@@ -1,16 +1,3 @@
-// for (i = 1; i < 8; i++) {
-//   var skillTitle = document.getElementById(`a${i}`);
-//   skillTitle.addEventListener("click", function (e) {
-//     let svg = e.path[1].querySelector("svg");
-//     console.log(skillTitle);
-//     boom(svg);
-//   });
-// }
-
-function boom(svg) {
-  svg.classList.contains("none")? svg.classList.remove("none"): svg.classList.add("none");
-}
-
 const moreBtn = document.querySelector(".moreBtn");
 
 moreBtn.addEventListener("click", function (e) {
@@ -29,3 +16,19 @@ const button = () => {
 };
 
 button();
+
+const gitBtn = () => {
+  const morebtn = document.querySelector("#morebtn");
+  
+  window.addEventListener("scroll",function(){
+    const nowScroll = window.scrollY;
+    
+    if(nowScroll > 200){
+      morebtn.style.opacity="1";
+    } else {
+      morebtn.style.opacity="0";
+    }
+  })
+}
+
+gitBtn();

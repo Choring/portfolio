@@ -893,7 +893,7 @@ nav p {
 ***************************************************/
 
 #morebtn {  
-    position: relative;
+    opacity: 0;
 }
 
 .gitbtn img {
@@ -903,6 +903,11 @@ nav p {
     right: 3%;
     bottom: 80px;
     border-radius: 50%;
+    background: #999999;
+    transition: all 0.3s;
+}
+
+.gitbtn img:hover {
     background: #F3F3F3;
 }
 
