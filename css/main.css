@@ -74,7 +74,7 @@ nav p {
     transition: all 0.6s;
 }
 
-@media screen and (min-width:375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .logo {
         left: 34%;
         transition: 0.3s;
@@ -678,7 +678,7 @@ nav p {
     opacity: 1;
 }
 
-@media screen  and (min-width:375px) and (max-width:768px) {
+@media screen   and (max-width:768px) {
     #work {
         padding-left: 15px;
     }
@@ -828,7 +828,7 @@ nav p {
     left: 60px;
 }
 
-@media screen  and (min-width:375px) and (max-width:768px) {
+@media screen  and (max-width:768px) {
     #contact {
         padding-left: 15px;
     }
