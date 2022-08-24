@@ -49,12 +49,12 @@ nav>ul {
     position: absolute;
     right: 50px;
     justify-content: space-between;
-    line-height: 50px;
+    padding-top:14px;
     text-align: center;
 }
 
 nav>ul>li {
-    width: 150px;
+    width: fit-content;
     transition: .4s;
 }
 
@@ -62,6 +62,18 @@ nav p {
     font-size: 1.2em;
     color: #F3F3F3;
 }
+
+.toggle > ul li p::after, nav > ul li p::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px #08FDD8;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.toggle > ul li p:hover::after, nav > ul li p:hover::after{
+    transform: scaleX(1);
+} 
 
 .toggle {
     width: 250px;
@@ -126,14 +138,16 @@ nav p {
     }
 
     .toggle>ul li {
-        width: 100%;
-        margin: 25px 0;
+        width: fit-content;
+        margin: 25px auto;
     }
 
     .toggle>ul li p {
         text-align:center;
         font-size: 1.6em;
     }
+
+    
 }
 
 /***************************************************
@@ -666,12 +680,13 @@ nav p {
 
 
 .preparing {
-    opacity: 1;
-    font-size: 1.3rem;
+    opacity: 0;
+    font-size: 1.5rem;
     position: absolute;
     top: 45%;
-    left: 40%;
-    background: blueviolet;
+    left: 39%;
+    color: #08FDD8;
+    font-weight: bold;
 }
 
 .workBox:hover .preparing {
@@ -917,12 +932,13 @@ nav p {
     right: 3%;
     bottom: 80px;
     border-radius: 50%;
-    background: #999999;
+    background: #F3F3F3;
     transition: all 0.3s;
 }
 
 .gitbtn img:hover {
-    background: #F3F3F3;
+    transform: translateY(-20%);
+    background:#08FDD8;
 }
 
 /***************************************************
